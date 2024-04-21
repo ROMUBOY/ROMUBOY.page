@@ -1,1 +1,173 @@
-<p>resume works!</p>
+<div class="container text-center">
+    <button (ckick)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download Currículo em PDF</button>
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Experiências</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                    </div>                    
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Desenvolvedor .Net</h2>
+                    <h3 class="text-primary">ADSet - INNOV</h3>
+                    <ul>
+                        <li>Manutenção e criação de novas funções em sistemas de gerenciamento de estoques automotivos utilizando .NET e C#, realizando Integração com banco de dados através de Entity Framework e modelando bancos de dados utilizando MS SQL Server. Criação e manutenção de telas utilizando HTML, CSS, Razor Pages, JavaScript, jQuery e Bootstrap. Versionamento utilizando Team Foundation Server. Metodologias Ágeis Scrum e Kanban.</li>
+                    </ul>                
+                </div>
+    
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Desenvolvedor Back-end</h2>
+                    <h3 class="text-primary">Outsmarting</h3>
+                    <ul>
+                        <li>Realizava manutenção e criação de novas funções em sistemas diversos utilizando .NET, C# e modelagem DDD. Integração com o banco de dados utilizando Entity Framework. Versionamento utilizando Git. Metodologia Ágil Scrum.</li>
+                    </ul>                
+                </div>
+    
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Programação de jogos eletrônicos - Autônomo</h2>
+                    <h3 class="text-primary">Molotov Estúdios</h3>
+                    <ul>
+                        <li>Programação de gameplay e interfaces de jogos digitais utilizando a plataforma Unity/C# e Metodologias Ágeis Scrum e Kanban. Versionamento utilizando Git. Lead Game Designer.</li>
+                    </ul>                
+                </div>
+    
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Analista de qualidade - Estágio</h2>
+                    <h3 class="text-primary">TecnoTRENDS </h3>
+                    <ul>
+                        <li>Realizava testes de funcionais e usabilidade, automatização testes funcionais utilizando C# e Selenium WebDriver e buscava manter a qualidade dos processos de desenvolvimento. Utilizava a Metodologias Ágeis Scrum e Kanban.</li>
+                    </ul>                
+                </div>
+    
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Programador .Net - Estágio</h2>
+                    <h3 class="text-primary">Atena Tecnologia</h3>
+                    <ul>
+                        <li>Realizava manutenção e criação de novas funções em sistemas de previdencia alternativa utilizando .NET e C#. Realizava Integração com banco de dados através de NHibrenate e modelava bancos de dados utilizando MS SQL Server.</li>
+                    </ul>                
+                </div>
+    
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Programador web - Estágio</h2>
+                    <h3 class="text-primary">Atena Tecnologia</h3>
+                    <ul>
+                        <li>Desenvolvia pesquisas de mercado inteligentes em plataforma web utilizando HTML, CSS e javascript. Utilizava Kanban.</li>
+                    </ul>                
+                </div>
+            </accordion-group>
+        
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Educação</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                    </div>                    
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Universidade Federal da Bahia</h2>
+                    <h3 class="text-primary">Bacharelado em Engenharia da Computação</h3>                               
+                    <br>
+                </div>
+    
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Senac Brasil</h2>
+                    <h3 class="text-primary">Curso Superior de Tecnologia (CST), Desenvolvimento de Jogos Digitais</h3>
+                    <ul>
+                        <li>Especialização em game, com duração de 3 meses no SENAC-BA. Uma abordagem geral da criação de um jogo, passando desde o conceito a prototipagem. Junto a uma equipe foi possível criar um jogo, o Oxente uma aventura na Bahia, que visa através do jogo possibilitar uma viagem, cheia de aventuras pela Bahia, passando por lugares turísticos e outro nem tanto, porém de grande importância para os baianos. Área de identificação, Game Designer, Game Producer e Game Programmer.</li>
+                    </ul>                
+                </div>
+    
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Benditas.art</h2>
+                    <h3 class="text-primary">Curso Superior de Tecnologia (CST), Desenvolvimento de Jogos Digitais</h3>
+                    <ul>
+                        <li>Uma abordagem geral da criação de um jogo, passando desde o conceito a prototipagem. Junto a uma equipe foi possível criar um jogo, o Quarto Farol, um jogo no estilo runner. Área de identificação, Game Designer, Game Producer e Game Programmer.</li>
+                    </ul>                
+                </div>
+            </accordion-group>
+        
+            <accordion-group [(isOpen)]="isCertificationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certificados</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificationOpen" style="color: white;">v</div>
+                    </div>                    
+                </button>
+                <div style="text-align: left;">                
+                    <h3 class="text-primary"><a href="https://www.dio.me/certificate/CD25689D/share">Bootcamp WEX - Desenvolvimento .NET e QA</a></h3>
+                    <h4>DIO</h4>
+                    <ul>
+                        <li>Novembro de 2023</li>
+                        <li>CD25689D</li>
+                    </ul>                
+                </div>
+    
+                <div style="text-align: left;">                
+                    <h3 class="text-primary"><a href="https://www.dio.me/certificate/4NJZ870S/share">.NET Developer</a></h3>
+                    <h4>DIO</h4>
+                    <ul>
+                        <li>Abril de 2024</li>
+                        <li>4NJZ870S</li>
+                    </ul>                
+                </div>
+            </accordion-group>
+        
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Habilidades</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                    </div>                    
+                </button>
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <h3>Linguagens</h3>
+                        <ul>
+                            <li>C#</li>
+                            <li>TypeScript</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks</h3>
+                        <ul>
+                            <li>ASP.NET</li>                        
+                            <li>Angular</li>
+                            <li>jQuery</li>
+                            <li>Unity Engine</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Outras Habilidades</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>SQL Server</li>
+                            <li>Postman</li>
+                            <li>Azure</li>
+                            <li>MVC</li>
+                            <li>SOLID</li>
+                            <li>Scrum</li>
+                            <li>Kanban</li>
+                        </ul>
+                    </div>
+                </div>
+            </accordion-group>
+        </accordion>
+    </div>    
+</div>
